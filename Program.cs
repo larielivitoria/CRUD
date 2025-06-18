@@ -113,16 +113,13 @@ void DeletarCliente()
     Console.WriteLine("Digite o Cliente que deseja deletar");
     string nomeRemover = Console.ReadLine();
 
-    Cliente clienteEncontrado = listaClientes.Find(c => c.Nome.Equals(nomeRemover,StringComparison.OrdinalIgnoreCase));
-
-    if (clienteEncontrado != null)
+    for (int i = 0; i < listaClientes.Count; i++ )
     {
-        listaClientes.Remove(clienteEncontrado);
-        Console.WriteLine("Cliente excluido com sucesso");
-    }
-    else
-    {
-        Console.WriteLine("Cliente não encontrado");
+        if (listaClientes[i].Nome == nomeRemover)
+        {
+            listaClientes.RemoveAt(i);
+            Console.WriteLine("Cliente removido");
+        }
     }
 
     Console.WriteLine("Digite uma tecla para voltar ao menu");
