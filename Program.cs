@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using CRUD.Opcoes;
-// criar, listar, atualizar, deletar, clientes
+// criar, listar, atualizar, deletar clientes
 
 List<Cliente> listaClientes = new List<Cliente>();
 
