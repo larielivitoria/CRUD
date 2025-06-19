@@ -3,6 +3,8 @@ using System.Linq;
 using CRUD.Opcoes;
 // criar, listar, atualizar, deletar clientes
 
+string conexao = "server=localhost;database=clientesdb;uid=root;";
+
 List<Cliente> listaClientes = new List<Cliente>();
 
 
